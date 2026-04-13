@@ -76,9 +76,9 @@ The dataset included in this project covers **adult, pediatric, and neonatal pop
 
 ## 📸 Screenshots / Demo
 
-* `docs/1.png`
-* `docs/2.png`
-* `docs/3.png`
+![Home](docs/1.png)
+![Search](docs/2.png)
+![Detail](docs/3.png)
 
 ---
 
@@ -234,6 +234,6 @@ Please keep contributions aligned with the project’s educational and clinical-
 ## 👤 Author / Contact
 
 **Author:** Mohammed W. Hammami
-**Contact:** Add your GitHub profile, email, or project website here
+**Contact:** biowess@proton.me
 
 ---
