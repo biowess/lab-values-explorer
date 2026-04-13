@@ -233,7 +233,7 @@ Please keep contributions aligned with the project’s educational and clinical-
 
 ## 👤 Author / Contact
 
-**Author:** Mohammed W. Hammami
-**Contact:** biowess@proton.me
+* **Author:** Mohammed W. Hammami
+* **Contact:** biowess@proton.me
 
 ---
