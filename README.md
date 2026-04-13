@@ -74,11 +74,25 @@ The dataset included in this project covers **adult, pediatric, and neonatal pop
 
 ---
 
-## 📸 Screenshots / Demo
+## 📸 Screenshots
 
-![Home](docs/1.png)
-![Search](docs/2.png)
-![Detail](docs/3.png)
+<p align="center">
+  <img src="docs/1.png" width="800" alt="Home Page" />
+  <br/>
+  <em>🏠 Home page with quick access to lab search</em>
+</p>
+
+<p align="center">
+  <img src="docs/2.png" width="800" alt="Search Results" />
+  <br/>
+  <em>🔎 Search results with category filtering</em>
+</p>
+
+<p align="center">
+  <img src="docs/3.png" width="800" alt="Lab Detail View" />
+  <br/>
+  <em>🧪 Detailed lab view with reference ranges and evaluation</em>
+</p>
 
 ---
 
