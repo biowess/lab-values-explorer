@@ -11,6 +11,7 @@
   <img src="https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white" alt="HTML">
   <img src="https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white" alt="CSS">
   <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="Apache License 2.0">
+  <img src="https://img.shields.io/badge/status-alpha--1-orange" alt="Alpha v1">
 </p>
 
 ---
