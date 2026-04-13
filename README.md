@@ -1,5 +1,7 @@
 # 🧪 Lab Values Explorer
 
+> ⚠️ **Alpha v1** — This project is in early development and may change significantly.
+
 > A polished clinical reference database for exploring lab values, reference intervals, and interpretation notes.
 > Built to help users browse adult, pediatric, and neonatal reference data in a clean, searchable interface.
 
