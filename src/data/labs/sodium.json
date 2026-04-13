@@ -1,0 +1,39 @@
+{
+  "id": "sodium",
+  "name": "Sodium (Na+)",
+  "aliases": ["Na", "Serum Sodium"],
+  "category": "Biochemistry",
+  "subtype": "Basic Metabolic Panel",
+  "description": "Sodium is the major extracellular cation. It plays a central role in maintaining normal water distribution, osmotic pressure, and acid-base balance in the extracellular fluid.",
+  "unit": "mEq/L",
+  "ranges": [
+    {
+      "age_min": { "value": 0, "unit": "days" },
+      "age_max": { "value": 28, "unit": "days" },
+      "sex": "all",
+      "low": 133,
+      "high": 146,
+      "label": "Neonate"
+    },
+    {
+      "age_min": { "value": 1, "unit": "months" },
+      "sex": "all",
+      "low": 135,
+      "high": 145,
+      "label": "Child & Adult"
+    }
+  ],
+  "interpretation": "Hyponatremia (<135 mEq/L) can result from excess water retention (e.g., heart failure, SIADH) or sodium loss (e.g., diuretics, vomiting). Hypernatremia (>145 mEq/L) typically indicates a water deficit relative to sodium, often due to inadequate water intake or excessive fluid loss (e.g., diabetes insipidus).",
+  "warnings": [
+    "Pseudohyponatremia can occur in the setting of severe hyperlipidemia or hyperproteinemia.",
+    "Hyperglycemia causes a dilutional hyponatremia; correct sodium by adding 1.6 mEq/L for every 100 mg/dL increase in glucose above normal."
+  ],
+  "references": [
+    "1. Adrogué HJ, Madias NE. Hyponatremia. N Engl J Med. 2000;342(21):1581-1589.",
+    "2. Adrogué HJ, Madias NE. Hypernatremia. N Engl J Med. 2000;342(20):1493-1499."
+  ],
+  "examples": [
+    "A patient with a serum sodium of 120 mEq/L presents with confusion and requires careful evaluation of volume status."
+  ],
+  "notes": "Serum samples are preferred. Avoid hemolysis."
+}

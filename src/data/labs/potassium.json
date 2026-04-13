@@ -1,0 +1,38 @@
+{
+  "id": "potassium",
+  "name": "Potassium (K+)",
+  "aliases": ["K", "Serum Potassium"],
+  "category": "Biochemistry",
+  "subtype": "Basic Metabolic Panel",
+  "description": "Potassium is the major intracellular cation. It is critical for maintaining cellular resting membrane potential, particularly in excitable tissues like the heart and skeletal muscle.",
+  "unit": "mEq/L",
+  "ranges": [
+    {
+      "age_min": { "value": 0, "unit": "days" },
+      "age_max": { "value": 28, "unit": "days" },
+      "sex": "all",
+      "low": 3.7,
+      "high": 5.9,
+      "label": "Neonate"
+    },
+    {
+      "age_min": { "value": 1, "unit": "months" },
+      "sex": "all",
+      "low": 3.5,
+      "high": 5.0,
+      "label": "Child & Adult"
+    }
+  ],
+  "interpretation": "Hypokalemia (<3.5 mEq/L) can cause muscle weakness and cardiac arrhythmias; often due to diuretics, GI losses, or intracellular shifts. Hyperkalemia (>5.0 mEq/L) can lead to fatal cardiac arrhythmias; common causes include renal failure, ACE inhibitors, and tissue breakdown.",
+  "warnings": [
+    "Hemolysis during blood draw is a common cause of pseudohyperkalemia.",
+    "ECG changes should be monitored in significant hyper- or hypokalemia."
+  ],
+  "references": [
+    "1. Mount DB. Fluid and Electrolyte Disturbances. In: Kasper DL, et al., eds. Harrison's Principles of Internal Medicine. 19th ed. New York: McGraw-Hill; 2015."
+  ],
+  "examples": [
+    "A patient with chronic kidney disease presents with a potassium of 6.2 mEq/L and peaked T waves on ECG."
+  ],
+  "notes": "Ensure prompt separation of serum/plasma from cells to prevent artifactual elevation."
+}

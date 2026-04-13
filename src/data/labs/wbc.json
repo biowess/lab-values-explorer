@@ -1,0 +1,46 @@
+{
+  "id": "wbc",
+  "name": "White Blood Cell Count (WBC)",
+  "aliases": ["Leukocyte Count"],
+  "category": "Hematology",
+  "subtype": "Complete Blood Count",
+  "description": "The total number of white blood cells in a volume of blood. It is a key indicator of immune system status, infection, inflammation, and bone marrow function.",
+  "unit": "x10³/µL",
+  "ranges": [
+    {
+      "age_min": { "value": 0, "unit": "days" },
+      "age_max": { "value": 1, "unit": "days" },
+      "sex": "all",
+      "low": 9.0,
+      "high": 30.0,
+      "label": "Neonate (0-1 day)"
+    },
+    {
+      "age_min": { "value": 1, "unit": "months" },
+      "age_max": { "value": 2, "unit": "years" },
+      "sex": "all",
+      "low": 6.0,
+      "high": 17.0,
+      "label": "Infant/Toddler"
+    },
+    {
+      "age_min": { "value": 18, "unit": "years" },
+      "sex": "all",
+      "low": 4.5,
+      "high": 11.0,
+      "label": "Adult"
+    }
+  ],
+  "interpretation": "Leukocytosis (>11.0 x10³/µL in adults) may indicate infection, inflammation, tissue necrosis, or leukemia. Leukopenia (<4.5 x10³/µL) may result from bone marrow depression, severe infection, autoimmune disease, or certain medications.",
+  "warnings": [
+    "Corticosteroids can cause a significant demargination leukocytosis.",
+    "Normal ranges vary significantly with age, especially in neonates and young children."
+  ],
+  "references": [
+    "1. Pagana KD, Pagana TJ. Mosby's Manual of Diagnostic and Laboratory Tests. 6th ed. St. Louis, MO: Elsevier; 2018."
+  ],
+  "examples": [
+    "A 25-year-old female presenting with fever and right lower quadrant pain has a WBC of 16.5 x10³/µL, supporting a diagnosis of acute appendicitis."
+  ],
+  "notes": "A differential count is usually required to determine which specific cell line is altered."
+}

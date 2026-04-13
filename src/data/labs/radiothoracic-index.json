@@ -1,0 +1,38 @@
+{
+  "id": "radiothoracic-index",
+  "name": "Cardiothoracic Ratio (CTR)",
+  "aliases": ["Radiothoracic Index", "Heart-to-Chest Ratio"],
+  "category": "Radiology",
+  "subtype": "Chest X-Ray",
+  "description": "The cardiothoracic ratio is used in medicine to measure the size of the heart. It is the ratio of maximal horizontal cardiac diameter to maximal horizontal thoracic diameter (inner edge of ribs/edge of pleura) measured on a PA chest radiograph.",
+  "unit": "ratio",
+  "ranges": [
+    {
+      "age_min": { "value": 0, "unit": "days" },
+      "age_max": { "value": 1, "unit": "months" },
+      "sex": "all",
+      "low": 0.40,
+      "high": 0.60,
+      "label": "Neonate"
+    },
+    {
+      "age_min": { "value": 1, "unit": "months" },
+      "sex": "all",
+      "low": 0.40,
+      "high": 0.50,
+      "label": "Child & Adult"
+    }
+  ],
+  "interpretation": "A CTR > 0.50 in adults is generally considered abnormal and may indicate cardiomegaly (heart enlargement), pericardial effusion, or poor inspiratory effort. In neonates, a ratio up to 0.60 can be normal.",
+  "warnings": [
+    "AP view chest radiographs artificially magnify the heart size, making CTR unreliable.",
+    "Poor inspiration can falsely elevate the ratio."
+  ],
+  "references": [
+    "1. Danzer CS. The cardiothoracic ratio: an index of cardiac enlargement. Am J Med Sci. 1919;157:513."
+  ],
+  "examples": [
+    "A PA chest radiograph of a 60-year-old male shows a maximal cardiac diameter of 16 cm and a maximal thoracic diameter of 30 cm, yielding a CTR of 0.53, suggesting cardiomegaly."
+  ],
+  "notes": "Measured on a standard PA chest radiograph taken at full inspiration."
+}

@@ -1,0 +1,54 @@
+{
+  "id": "hemoglobin",
+  "name": "Hemoglobin (Hb)",
+  "aliases": ["Hgb", "Hb"],
+  "category": "Hematology",
+  "subtype": "Complete Blood Count",
+  "description": "Hemoglobin is the iron-containing oxygen-transport metalloprotein in the red blood cells. It is responsible for transporting oxygen from the lungs to the rest of the body.",
+  "unit": "g/dL",
+  "ranges": [
+    {
+      "age_min": { "value": 0, "unit": "days" },
+      "age_max": { "value": 3, "unit": "days" },
+      "sex": "all",
+      "low": 14.5,
+      "high": 22.5,
+      "label": "Neonate (0-3 days)"
+    },
+    {
+      "age_min": { "value": 1, "unit": "months" },
+      "age_max": { "value": 2, "unit": "months" },
+      "sex": "all",
+      "low": 9.0,
+      "high": 14.0,
+      "label": "Infant (1-2 months)"
+    },
+    {
+      "age_min": { "value": 18, "unit": "years" },
+      "sex": "male",
+      "low": 13.8,
+      "high": 17.2,
+      "label": "Adult Male"
+    },
+    {
+      "age_min": { "value": 18, "unit": "years" },
+      "sex": "female",
+      "low": 12.1,
+      "high": 15.1,
+      "label": "Adult Female"
+    }
+  ],
+  "interpretation": "Decreased levels indicate anemia, which may be due to blood loss, nutritional deficiencies (iron, B12, folate), hemolysis, or bone marrow suppression. Elevated levels (polycythemia) may be primary (polycythemia vera) or secondary to chronic hypoxia (e.g., COPD, high altitude) or dehydration.",
+  "warnings": [
+    "Values may be falsely elevated in severe dehydration.",
+    "Reference ranges may vary slightly depending on the laboratory and methodology."
+  ],
+  "references": [
+    "1. Pagana KD, Pagana TJ. Mosby's Manual of Diagnostic and Laboratory Tests. 6th ed. St. Louis, MO: Elsevier; 2018.",
+    "2. World Health Organization. Haemoglobin concentrations for the diagnosis of anaemia and assessment of severity. Geneva: WHO; 2011."
+  ],
+  "examples": [
+    "A 45-year-old male presenting with fatigue and a hemoglobin of 10.5 g/dL requires investigation for anemia."
+  ],
+  "notes": "No special patient preparation (such as fasting) is required prior to testing."
+}

@@ -1,0 +1,30 @@
+{
+  "id": "bmi",
+  "name": "Body Mass Index (BMI)",
+  "aliases": ["Quetelet Index"],
+  "category": "Clinical Indices",
+  "subtype": "Anthropometry",
+  "description": "Body Mass Index is a value derived from the mass and height of a person. It is used as a screening tool to identify possible weight problems for adults.",
+  "unit": "kg/m²",
+  "ranges": [
+    {
+      "age_min": { "value": 18, "unit": "years" },
+      "sex": "all",
+      "low": 18.5,
+      "high": 24.9,
+      "label": "Normal Weight (Adult)"
+    }
+  ],
+  "interpretation": "A BMI <18.5 is considered underweight. 18.5-24.9 is normal. 25.0-29.9 is overweight. ≥30.0 is classified as obese. Note that BMI does not directly measure body fat and may be misleading in highly muscular individuals or the elderly.",
+  "warnings": [
+    "Not applicable for pregnant women.",
+    "Pediatric BMI must be plotted on age- and sex-specific percentiles."
+  ],
+  "references": [
+    "1. Clinical Guidelines on the Identification, Evaluation, and Treatment of Overweight and Obesity in Adults. NIH Publication No. 98-4083. 1998."
+  ],
+  "examples": [
+    "A 30-year-old male with a height of 1.80 m and weight of 85 kg has a BMI of 26.2 kg/m², falling into the overweight category."
+  ],
+  "notes": "Calculated as weight in kilograms divided by the square of height in meters."
+}
