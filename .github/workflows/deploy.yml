@@ -34,12 +34,12 @@ jobs:
 
       - name: Install dependencies (fix Tailwind oxide bug)
         run: |
-        rm -rf node_modules package-lock.json
-        npm install --include=optional
+          rm -rf node_modules package-lock.json
+          npm install --include=optional
 
       - name: Build project
         run: npm run build
-        
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
