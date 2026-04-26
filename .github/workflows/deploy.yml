@@ -29,7 +29,10 @@ jobs:
           cache: npm
 
       - name: Clean install dependencies
-        run: npm ci
+        run: npm ci --no-audit --no-fund --legacy-peer-deps
+
+      - name: Rebuild native modules
+        run: npm rebuild
 
       - name: Build project
         run: npm run build
