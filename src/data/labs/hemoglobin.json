@@ -1,0 +1,218 @@
+{
+  "id": "hemoglobin",
+  "name": "Hemoglobin",
+  "short_name": "Hb",
+  "aliases": [
+    "Hgb",
+    "Haemoglobin"
+  ],
+  "category": "Hematology",
+  "subcategories": [
+    "Complete Blood Count",
+    "Erythrocyte Tests"
+  ],
+  "tags": [
+    "anemia",
+    "blood",
+    "erythrocytes",
+    "oxygen-transport",
+    "polycythemia"
+  ],
+  "specimen": "whole blood",
+  "analyte_type": "quantitative",
+  "unit": "g/L",
+  "description": "Hemoglobin is the iron-containing oxygen-transport metalloprotein in red blood cells responsible for carrying oxygen from the lungs to the body's tissues.",
+  "clinical_use": "Used to diagnose and monitor anemia, polycythemia, acute or chronic blood loss, and response to hematologic treatments.",
+  "evidence_level": "high",
+  "ranges": [
+    {
+      "population": {
+        "age": { "min": 0, "max": 28, "unit": "days" },
+        "sex": "all"
+      },
+      "value": { "min": 135, "max": 200, "unit": "g/L" },
+      "label": "Neonate normal",
+      "note": "Values are highest at birth (up to 240 g/L) and decline rapidly in the first weeks of life.",
+      "references": [
+        {
+          "source": "Nelson Textbook of Pediatrics, 21st Edition",
+          "year": 2020
+        },
+        {
+          "source": "Mayo Clinic Laboratories",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 1, "max": 12, "unit": "months" },
+        "sex": "all"
+      },
+      "value": { "min": 100, "max": 140, "unit": "g/L" },
+      "label": "Infant normal",
+      "note": "Reflects the physiologic nadir occurring between 2 and 6 months of age.",
+      "references": [
+        {
+          "source": "CALIPER Project (Canadian Laboratory Initiative on Pediatric Reference Intervals)",
+          "year": 2013
+        },
+        {
+          "source": "WHO: Haemoglobin concentrations for the diagnosis of anaemia",
+          "year": 2011
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 1, "max": 12, "unit": "years" },
+        "sex": "all"
+      },
+      "value": { "min": 110, "max": 150, "unit": "g/L" },
+      "label": "Child normal",
+      "references": [
+        {
+          "source": "CALIPER Project",
+          "year": 2012
+        },
+        {
+          "source": "British Journal of Haematology: Reference intervals for a pediatric population",
+          "year": 2014
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 13, "max": 17, "unit": "years" },
+        "sex": "male"
+      },
+      "value": { "min": 130, "max": 170, "unit": "g/L" },
+      "label": "Adolescent male normal",
+      "references": [
+        {
+          "source": "CALIPER Project",
+          "year": 2012
+        },
+        {
+          "source": "Mayo Clinic Laboratories",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 13, "max": 17, "unit": "years" },
+        "sex": "female"
+      },
+      "value": { "min": 120, "max": 150, "unit": "g/L" },
+      "label": "Adolescent female normal",
+      "references": [
+        {
+          "source": "CALIPER Project",
+          "year": 2012
+        },
+        {
+          "source": "WHO: Haemoglobin concentrations for the diagnosis of anaemia",
+          "year": 2011
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 18, "unit": "years" },
+        "sex": "male"
+      },
+      "value": { "min": 135, "max": 175, "unit": "g/L" },
+      "label": "Adult male normal",
+      "references": [
+        {
+          "source": "WHO Vitamin and Mineral Nutrition Information System",
+          "year": 2011
+        },
+        {
+          "source": "CLSI EP28-A3c: Defining, Establishing, and Verifying Reference Intervals",
+          "year": 2010
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 18, "unit": "years" },
+        "sex": "female"
+      },
+      "value": { "min": 120, "max": 155, "unit": "g/L" },
+      "label": "Adult female normal",
+      "references": [
+        {
+          "source": "WHO Vitamin and Mineral Nutrition Information System",
+          "year": 2011
+        }
+      ]
+    }
+  ],
+  "interpretation_rules": [
+    {
+      "condition": { "op": "lt", "value": 110, "unit": "g/L" },
+      "population_context": "Children 6-59 months",
+      "meaning": "Anemia (WHO threshold)"
+    },
+    {
+      "condition": { "op": "lt", "value": 115, "unit": "g/L" },
+      "population_context": "Children 5-11 years",
+      "meaning": "Anemia (WHO threshold)"
+    },
+    {
+      "condition": { "op": "lt", "value": 120, "unit": "g/L" },
+      "population_context": "Adult non-pregnant female",
+      "meaning": "Anemia"
+    },
+    {
+      "condition": { "op": "lt", "value": 130, "unit": "g/L" },
+      "population_context": "Adult male",
+      "meaning": "Anemia"
+    }
+  ],
+  "critical_values": [
+    {
+      "condition": { "op": "lt", "value": 70, "unit": "g/L" },
+      "meaning": "Severe anemia; high risk of cardiopulmonary compromise, consider immediate transfusion"
+    },
+    {
+      "condition": { "op": "gt", "value": 200, "unit": "g/L" },
+      "meaning": "Severe polycythemia; risk of hyperviscosity syndrome and thrombosis"
+    }
+  ],
+  "warnings": [
+    "Reference ranges are physiologically higher in populations living at high altitudes and in heavy smokers.",
+    "Hemodilution during the second and third trimesters of pregnancy naturally lowers hemoglobin concentrations.",
+    "Severe dehydration can cause falsely elevated hemoglobin levels.",
+    "Pediatric ranges are highly age-dependent; ensure exact age is used for interpretation."
+  ],
+  "notes": [
+    "The physiologic nadir in infancy occurs around 8-12 weeks as fetal hemoglobin (HbF) is replaced by adult hemoglobin (HbA).",
+    "Neonatal values vary significantly based on timing of cord clamping and gestational age."
+  ],
+  "examples": [],
+  "references": [
+    {
+      "authors": "World Health Organization",
+      "title": "Haemoglobin concentrations for the diagnosis of anaemia and assessment of severity",
+      "journal": "WHO Vitamin and Mineral Nutrition Information System",
+      "year": 2011
+    },
+    {
+      "authors": "Colantonio DA, et al.",
+      "title": "Closing the gaps in pediatric laboratory reference intervals: a CALIPER database of 40 biochemical markers in a healthy and multiethnic population of children",
+      "journal": "Clinical Chemistry",
+      "year": 2012
+    },
+    {
+      "authors": "Kliegman RM, et al.",
+      "title": "Nelson Textbook of Pediatrics, 21st Edition",
+      "journal": "Elsevier",
+      "year": 2020
+    }
+  ],
+  "version": "1.1.0",
+  "updated_at": "2026-04-20"
+}

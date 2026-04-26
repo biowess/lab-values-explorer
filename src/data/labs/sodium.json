@@ -1,0 +1,222 @@
+{
+  "id": "sodium",
+  "name": "Sodium",
+  "short_name": "Na+",
+  "aliases": [
+    "Serum Sodium",
+    "S-Na"
+  ],
+  "category": "Biochemistry",
+  "subcategories": [
+    "Electrolytes",
+    "Renal Function"
+  ],
+  "tags": [
+    "osmolarity",
+    "fluid-balance",
+    "electrolyte-disorder"
+  ],
+  "specimen": "serum",
+  "analyte_type": "quantitative",
+  "unit": "mmol/L",
+  "evidence_level": "high",
+  "description": "Sodium is the primary extracellular cation, responsible for maintaining extracellular fluid volume and plasma osmotic pressure.",
+  "clinical_use": "Evaluation of electrolyte balance, hydration status, renal function, and acid-base disorders.",
+  "ranges": [
+    {
+      "population": {
+        "age": {
+          "min": 0,
+          "max": 28,
+          "unit": "days"
+        },
+        "sex": "all"
+      },
+      "value": {
+        "min": 133,
+        "max": 146,
+        "unit": "mmol/L"
+      },
+      "label": "Neonatal normal",
+      "references": [
+        {
+          "source": "Nelson Textbook of Pediatrics, 21st Edition",
+          "year": 2019
+        },
+        {
+          "source": "Boston Children's Hospital Laboratory Handbook",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": {
+          "min": 1,
+          "max": 12,
+          "unit": "months"
+        },
+        "sex": "all"
+      },
+      "value": {
+        "min": 134,
+        "max": 144,
+        "unit": "mmol/L"
+      },
+      "label": "Infant normal",
+      "references": [
+        {
+          "source": "CALIPER Project (Canadian Laboratory Initiative on Pediatric Reference Intervals)",
+          "year": 2017
+        },
+        {
+          "source": "Mayo Clinic Laboratories",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": {
+          "min": 1,
+          "max": 12,
+          "unit": "years"
+        },
+        "sex": "all"
+      },
+      "value": {
+        "min": 135,
+        "max": 145,
+        "unit": "mmol/L"
+      },
+      "label": "Child normal",
+      "references": [
+        {
+          "source": "CALIPER Project (Canadian Laboratory Initiative on Pediatric Reference Intervals)",
+          "year": 2017
+        },
+        {
+          "source": "Mayo Clinic Laboratories",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": {
+          "min": 13,
+          "max": 17,
+          "unit": "years"
+        },
+        "sex": "all"
+      },
+      "value": {
+        "min": 135,
+        "max": 145,
+        "unit": "mmol/L"
+      },
+      "label": "Adolescent normal",
+      "references": [
+        {
+          "source": "CALIPER Project (Canadian Laboratory Initiative on Pediatric Reference Intervals)",
+          "year": 2017
+        },
+        {
+          "source": "Mayo Clinic Laboratories",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": {
+          "min": 18,
+          "unit": "years"
+        },
+        "sex": "all"
+      },
+      "value": {
+        "min": 135,
+        "max": 145,
+        "unit": "mmol/L"
+      },
+      "label": "Adult normal",
+      "references": [
+        {
+          "source": "Adrogué HJ, Madias NE. Hyponatremia. New England Journal of Medicine",
+          "year": 2000
+        },
+        {
+          "source": "Mayo Clinic Laboratories",
+          "year": 2024
+        }
+      ]
+    }
+  ],
+  "interpretation_rules": [
+    {
+      "condition": {
+        "op": "lt",
+        "value": 135,
+        "unit": "mmol/L"
+      },
+      "meaning": "Hyponatremia: May result from fluid overload, sodium loss (diuretics, diarrhea), or SIADH."
+    },
+    {
+      "condition": {
+        "op": "gt",
+        "value": 145,
+        "unit": "mmol/L"
+      },
+      "meaning": "Hypernatremia: May indicate dehydration, excessive salt intake, or diabetes insipidus."
+    }
+  ],
+  "critical_values": [
+    {
+      "condition": {
+        "op": "lte",
+        "value": 120,
+        "unit": "mmol/L"
+      },
+      "meaning": "Severe hyponatremia: High risk of cerebral edema and seizures."
+    },
+    {
+      "condition": {
+        "op": "gte",
+        "value": 160,
+        "unit": "mmol/L"
+      },
+      "meaning": "Severe hypernatremia: Risk of brain shrinkage, intracranial hemorrhage, and coma."
+    }
+  ],
+  "warnings": [
+    "Pseudohyponatremia may occur in cases of severe hyperlipidemia or hyperproteinemia depending on the laboratory method used.",
+    "Correction of chronic hyponatremia must be gradual to avoid osmotic demyelination syndrome."
+  ],
+  "notes": [
+    "Sodium levels should always be interpreted alongside clinical volume status (hypovolemic, euvolemic, or hypervolemic).",
+    "Reference intervals for neonates are slightly wider due to physiological transitions in fluid distribution and renal handling of sodium in the first weeks of life."
+  ],
+  "examples": [],
+  "references": [
+    {
+      "authors": "Adrogué HJ, Madias NE",
+      "title": "Hyponatremia",
+      "journal": "New England Journal of Medicine",
+      "year": 2000
+    },
+    {
+      "authors": "Spasovski G, et al.",
+      "title": "Clinical practice guideline on diagnosis and treatment of hyponatraemia",
+      "journal": "European Journal of Endocrinology",
+      "year": 2014
+    },
+    {
+      "authors": "Kliegman RM, et al.",
+      "title": "Nelson Textbook of Pediatrics",
+      "year": 2019
+    }
+  ],
+  "version": "1.1.0",
+  "updated_at": "2026-04-20"
+}

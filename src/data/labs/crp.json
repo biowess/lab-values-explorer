@@ -1,0 +1,216 @@
+{
+  "id": "crp",
+  "name": "C-Reactive Protein",
+  "short_name": "CRP",
+  "aliases": [
+    "C Reactive Protein",
+    "C-Reactive Protein (CRP)"
+  ],
+  "category": "Biochemistry",
+  "subcategories": [
+    "Inflammatory Markers"
+  ],
+  "tags": [
+    "inflammation",
+    "acute-phase",
+    "infection",
+    "pediatric",
+    "neonatal"
+  ],
+  "specimen": "serum",
+  "analyte_type": "quantitative",
+  "unit": "mg/L",
+  "description": "CRP is an acute-phase protein produced by the liver in response to inflammation.",
+  "clinical_use": "Marker of inflammation, infection, and tissue injury.",
+  "ranges": [
+    {
+      "population": {
+        "age": {
+          "min": 0,
+          "max": 28,
+          "unit": "days"
+        },
+        "sex": "all"
+      },
+      "value": {
+        "min": 0,
+        "max": 10,
+        "unit": "mg/L"
+      },
+      "label": "Neonates (0-28 days)",
+      "evidence_level": "high",
+      "references": [
+        {
+          "source": "American Academy of Pediatrics (AAP) Clinical Report: Management of Neonates With Suspected or Proven Early-Onset Bacterial Sepsis",
+          "year": 2018
+        },
+        {
+          "source": "Mayo Clinic Pediatric Reference Intervals",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": {
+          "min": 1,
+          "max": 12,
+          "unit": "months"
+        },
+        "sex": "all"
+      },
+      "value": {
+        "min": 0,
+        "max": 10,
+        "unit": "mg/L"
+      },
+      "label": "Infants (1-12 months)",
+      "evidence_level": "high",
+      "references": [
+        {
+          "source": "Nelson Textbook of Pediatrics, 21st Edition",
+          "year": 2019
+        },
+        {
+          "source": "Mayo Clinic Laboratories Reference Database",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": {
+          "min": 1,
+          "max": 12,
+          "unit": "years"
+        },
+        "sex": "all"
+      },
+      "value": {
+        "min": 0,
+        "max": 10,
+        "unit": "mg/L"
+      },
+      "label": "Children (1-12 years)",
+      "evidence_level": "high",
+      "references": [
+        {
+          "source": "Nelson Textbook of Pediatrics, 21st Edition",
+          "year": 2019
+        },
+        {
+          "source": "Mayo Clinic Laboratories Reference Database",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": {
+          "min": 13,
+          "max": 17,
+          "unit": "years"
+        },
+        "sex": "all"
+      },
+      "value": {
+        "min": 0,
+        "max": 10,
+        "unit": "mg/L"
+      },
+      "label": "Adolescents (13-17 years)",
+      "evidence_level": "high",
+      "references": [
+        {
+          "source": "Mayo Clinic Laboratories Reference Database",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": {
+          "min": 18,
+          "unit": "years"
+        },
+        "sex": "all"
+      },
+      "value": {
+        "min": 0,
+        "max": 10,
+        "unit": "mg/L"
+      },
+      "label": "Adult normal",
+      "evidence_level": "high",
+      "references": [
+        {
+          "source": "Journal of Clinical Investigation",
+          "year": 2003
+        },
+        {
+          "source": "Mayo Clinic Laboratories Reference Database",
+          "year": 2024
+        }
+      ]
+    }
+  ],
+  "interpretation_rules": [
+    {
+      "condition": {
+        "op": "lt",
+        "value": 10,
+        "unit": "mg/L"
+      },
+      "meaning": "Normal or minimal inflammation"
+    },
+    {
+      "condition": {
+        "op": "gte",
+        "value": 10,
+        "unit": "mg/L"
+      },
+      "meaning": "Inflammation or infection likely"
+    }
+  ],
+  "critical_values": [
+    {
+      "condition": {
+        "op": "gte",
+        "value": 100,
+        "unit": "mg/L"
+      },
+      "meaning": "Severe inflammation possible"
+    }
+  ],
+  "warnings": [
+    "CRP is nonspecific and must be interpreted in clinical context.",
+    "In neonates, a physiological increase in CRP can occur within the first 24-48 hours of life, but values persistently >10 mg/L or a rapidly rising trend should be evaluated for early-onset sepsis."
+  ],
+  "notes": [
+    "Standard CRP reference limits are generally independent of age and sex after the immediate postnatal period.",
+    "For cardiovascular risk assessment, High-Sensitivity CRP (hs-CRP) should be used, which has distinct lower-tier interpretive ranges."
+  ],
+  "examples": [],
+  "references": [
+    {
+      "authors": "Pepys MB, Hirschfield GM",
+      "title": "C-reactive protein: a critical update",
+      "journal": "Journal of Clinical Investigation",
+      "year": 2003
+    },
+    {
+      "authors": "Polin RA, Committee on Fetus and Newborn",
+      "title": "Management of Neonates With Suspected or Proven Early-Onset Bacterial Sepsis",
+      "journal": "Pediatrics (American Academy of Pediatrics)",
+      "year": 2012
+    },
+    {
+      "authors": "Kliegman RM, St. Geme JW, Blum NJ, Shah SS, Tasker RC, Wilson KM",
+      "title": "Nelson Textbook of Pediatrics, 21st Edition",
+      "journal": "Elsevier",
+      "year": 2019
+    }
+  ],
+  "version": "1.1.0",
+  "updated_at": "2026-04-20"
+}

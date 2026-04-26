@@ -1,0 +1,203 @@
+{
+  "id": "potassium",
+  "name": "Potassium",
+  "short_name": "K",
+  "aliases": [
+    "K+",
+    "Serum Potassium",
+    "Blood Potassium"
+  ],
+  "category": "Biochemistry",
+  "subcategories": [
+    "Electrolytes",
+    "Basic Metabolic Panel"
+  ],
+  "tags": [
+    "electrolyte",
+    "renal",
+    "cardiac"
+  ],
+  "specimen": "serum",
+  "analyte_type": "quantitative",
+  "unit": "mmol/L",
+  "evidence_level": "high",
+  "description": "Potassium is the major intracellular cation responsible for maintaining the resting membrane potential of cells, particularly critical for cardiac and skeletal muscle function.",
+  "clinical_use": "Used to evaluate electrolyte balance, cardiac arrhythmias, muscle weakness, renal function, acid-base status, and to monitor diuretic or anti-hypertensive therapies.",
+  "ranges": [
+    {
+      "population": {
+        "age": {
+          "min": 0,
+          "max": 28,
+          "unit": "days"
+        },
+        "sex": "all"
+      },
+      "value": {
+        "min": 3.7,
+        "max": 5.9,
+        "unit": "mmol/L"
+      },
+      "label": "Neonate normal",
+      "references": [
+        {
+          "source": "The Harriet Lane Handbook, 23rd Edition",
+          "year": 2023
+        },
+        {
+          "source": "Nelson Textbook of Pediatrics, 21st Edition",
+          "year": 2019
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": {
+          "min": 1,
+          "max": 12,
+          "unit": "months"
+        },
+        "sex": "all"
+      },
+      "value": {
+        "min": 4.1,
+        "max": 5.3,
+        "unit": "mmol/L"
+      },
+      "label": "Infant normal",
+      "references": [
+        {
+          "source": "Mayo Clinic Laboratories, Pediatric Reference Values",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": {
+          "min": 1,
+          "max": 12,
+          "unit": "years"
+        },
+        "sex": "all"
+      },
+      "value": {
+        "min": 3.4,
+        "max": 4.7,
+        "unit": "mmol/L"
+      },
+      "label": "Child normal",
+      "references": [
+        {
+          "source": "Mayo Clinic Laboratories, Pediatric Reference Values",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": {
+          "min": 13,
+          "max": 17,
+          "unit": "years"
+        },
+        "sex": "all"
+      },
+      "value": {
+        "min": 3.4,
+        "max": 4.7,
+        "unit": "mmol/L"
+      },
+      "label": "Adolescent normal",
+      "references": [
+        {
+          "source": "Mayo Clinic Laboratories, Pediatric Reference Values",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": {
+          "min": 18,
+          "unit": "years"
+        },
+        "sex": "all"
+      },
+      "value": {
+        "min": 3.5,
+        "max": 5.1,
+        "unit": "mmol/L"
+      },
+      "label": "Adult normal",
+      "references": [
+        {
+          "source": "Clinical and Laboratory Standards Institute (CLSI) Guidelines",
+          "year": 2020
+        }
+      ]
+    }
+  ],
+  "interpretation_rules": [
+    {
+      "condition": {
+        "op": "lt",
+        "value": 3.5,
+        "unit": "mmol/L"
+      },
+      "meaning": "Hypokalemia (Adult threshold; pediatric thresholds vary by age)"
+    },
+    {
+      "condition": {
+        "op": "gt",
+        "value": 5.1,
+        "unit": "mmol/L"
+      },
+      "meaning": "Hyperkalemia (Adult threshold; neonates and infants have naturally higher limits)"
+    }
+  ],
+  "critical_values": [
+    {
+      "condition": {
+        "op": "lte",
+        "value": 2.5,
+        "unit": "mmol/L"
+      },
+      "meaning": "Severe hypokalemia, increased risk of cardiac arrhythmias and muscle paralysis"
+    },
+    {
+      "condition": {
+        "op": "gte",
+        "value": 6.5,
+        "unit": "mmol/L"
+      },
+      "meaning": "Severe hyperkalemia, extreme risk of ventricular fibrillation and cardiac arrest"
+    }
+  ],
+  "warnings": [
+    "In vitro hemolysis is a frequent cause of falsely elevated serum potassium (pseudohyperkalemia).",
+    "Prolonged tourniquet use or fist clenching during venipuncture can artificially increase potassium levels.",
+    "Heel stick sampling in neonates may cause artifactual elevation due to hemolysis or tissue fluid contamination."
+  ],
+  "notes": [
+    "Serum potassium levels are tightly linked to acid-base balance; acidosis drives potassium out of cells, while alkalosis drives it into cells.",
+    "Neonatal and infant upper reference limits are naturally higher than adults due to immature renal function and physiological differences. Interpretation of hyperkalemia must be strictly age-adjusted."
+  ],
+  "examples": [],
+  "references": [
+    {
+      "authors": "Palmer BF, Clegg DJ",
+      "title": "Physiology and pathophysiology of potassium homeostasis",
+      "journal": "Advances in Physiology Education",
+      "year": 2016
+    },
+    {
+      "authors": "Gennari FJ",
+      "title": "Hypokalemia",
+      "journal": "New England Journal of Medicine",
+      "year": 1998
+    }
+  ],
+  "version": "1.1.0",
+  "updated_at": "2026-04-20"
+}
