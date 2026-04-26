@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import Fuse from 'fuse.js';
 import { Search, Filter } from 'lucide-react';
 import { labs } from '../data/labs';
-
+ 
 // Built once at module level — labs is static, Fuse index never needs to rebuild
 const fuse = new Fuse(labs, {
   keys: [
@@ -21,31 +21,31 @@ const fuse = new Fuse(labs, {
   ignoreLocation: true,
   minMatchCharLength: 2,
 });
-
+ 
 export default function SearchResults() {
   const [searchParams, setSearchParams] = useSearchParams();
   const query = searchParams.get('q') || '';
   const categoryFilter = searchParams.get('category') || '';
-
+ 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const q = formData.get('q') as string;
     setSearchParams({ q });
   };
-
+ 
   const results = useMemo(() => {
     const queryMatches = query
       ? fuse.search(query).map((r) => r.item)
       : labs;
-
+ 
     return categoryFilter
       ? queryMatches.filter((lab) => lab.category.toLowerCase() === categoryFilter.toLowerCase())
       : queryMatches;
   }, [query, categoryFilter]);
-
+ 
   const allCategories = Array.from(new Set(labs.map((l) => l.category))).sort();
-
+ 
   return (
     <div className="max-w-5xl mx-auto px-6 py-12">
       <div className="mb-10">
@@ -68,7 +68,7 @@ export default function SearchResults() {
           </div>
         </form>
       </div>
-
+ 
       <div className="flex flex-col md:flex-row gap-8">
         {/* Filters Sidebar */}
         <div className="w-full md:w-64 shrink-0">
@@ -76,7 +76,7 @@ export default function SearchResults() {
             <Filter className="w-4 h-4 text-gray-500" />
             <h2 className="text-sm font-semibold text-gray-900 uppercase tracking-wider">Filters</h2>
           </div>
-
+ 
           <div className="space-y-6">
             <div>
               <h3 className="text-sm font-medium text-gray-900 mb-3">Category</h3>
@@ -113,7 +113,7 @@ export default function SearchResults() {
             </div>
           </div>
         </div>
-
+ 
         {/* Results List */}
         <div className="flex-1">
           <div className="mb-6 pb-2 border-b border-gray-200 flex justify-between items-end">
@@ -122,7 +122,7 @@ export default function SearchResults() {
               {query && <span> for &ldquo;{query}&rdquo;</span>}
             </h2>
           </div>
-
+ 
           {results.length === 0 ? (
             <div className="py-12 text-center text-gray-500">
               No results found. Try adjusting your search or filters.
@@ -132,15 +132,17 @@ export default function SearchResults() {
               {results.map((lab) => (
                 <div key={lab.id} className="group">
                   <div className="flex items-baseline justify-between mb-1">
-                    <Link to={`/lab/${lab.id}`} className="text-xl font-medium text-blue-800 hover:underline hover:text-blue-600">
-                      {lab.name}
+                    <span className="flex items-baseline gap-2">
+                      <Link to={`/lab/${lab.id}`} className="text-xl font-serif text-blue-800 hover:underline hover:text-blue-600">
+                        {lab.name}
+                      </Link>
                       {lab.short_name && lab.short_name !== lab.name && (
-                        <span className="ml-2 text-sm font-mono text-gray-400">{lab.short_name}</span>
+                        <span className="text-sm font-mono text-gray-400">{lab.short_name}</span>
                       )}
-                    </Link>
+                    </span>
                     <span className="text-sm text-gray-500 ml-4">{lab.category}</span>
                   </div>
-
+ 
                   {/* Subcategories */}
                   {lab.subcategories.length > 0 && (
                     <div className="flex flex-wrap gap-1 mb-1">
@@ -151,17 +153,17 @@ export default function SearchResults() {
                       ))}
                     </div>
                   )}
-
+ 
                   {lab.aliases.length > 0 && (
                     <div className="text-sm text-gray-500 mb-2">
                       Also known as: {lab.aliases.join(', ')}
                     </div>
                   )}
-
+ 
                   <p className="text-gray-700 text-sm leading-relaxed mb-2 line-clamp-2">
                     {lab.description}
                   </p>
-
+ 
                   <div className="text-xs text-gray-500 flex flex-wrap items-center gap-x-4 gap-y-1">
                     <span>Unit: <span className="font-mono">{lab.unit}</span></span>
                     <span>•</span>
@@ -189,3 +191,5 @@ export default function SearchResults() {
     </div>
   );
 }
+ 
+
