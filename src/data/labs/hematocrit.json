@@ -1,0 +1,490 @@
+{
+  "id": "hematocrit",
+  "name": "Hematocrit",
+  "short_name": "Hct",
+  "aliases": [
+    "Packed cell volume",
+    "PCV",
+    "Crit"
+  ],
+  "category": "Hematology",
+  "subcategories": [
+    "Complete Blood Count",
+    "Erythrocyte Tests"
+  ],
+  "tags": [
+    "anemia",
+    "blood",
+    "erythrocytes",
+    "polycythemia",
+    "erythrocytosis",
+    "red-blood-cell-volume"
+  ],
+  "specimen": "whole blood",
+  "analyte_type": "quantitative",
+  "unit": "%",
+  "description": "Hematocrit (Hct) is the volume percentage of red blood cells in whole blood. It is a measure of red blood cell mass and oxygen-carrying capacity of the blood. Normal ranges vary by age, sex, and other factors such as altitude and pregnancy status.",
+  "clinical_use": "Used to diagnose and monitor anemia, polycythemia (erythrocytosis), dehydration, and response to treatments such as transfusion. Also guides therapeutic phlebotomy in polycythemia vera.",
+  "evidence_level": "high",
+  "ranges": [
+    {
+      "population": {
+        "age": { "min": 0, "max": 28, "unit": "days" },
+        "sex": "all"
+      },
+      "value": { "min": 44, "max": 64, "unit": "%" },
+      "value_si": { "min": 0.44, "max": 0.64, "unit": "volume fraction" },
+      "label": "Neonate normal",
+      "note": "Values are highest at birth (can reach up to 64%) and decline rapidly in the first weeks of life.",
+      "references": [
+        {
+          "source": "Nelson Textbook of Pediatrics, 21st Edition",
+          "year": 2020
+        },
+        {
+          "source": "Medscape Hematocrit Reference Range",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 1, "max": 2, "unit": "months" },
+        "sex": "all"
+      },
+      "value": { "min": 31, "max": 55, "unit": "%" },
+      "value_si": { "min": 0.31, "max": 0.55, "unit": "volume fraction" },
+      "label": "Infant (1-2 months) normal",
+      "note": "Reflects the physiologic nadir occurring in infancy.",
+      "references": [
+        {
+          "source": "University of Iowa Pediatric Reference Ranges",
+          "year": 2024
+        },
+        {
+          "source": "Medscape Hematocrit Reference Range",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 2, "max": 6, "unit": "months" },
+        "sex": "all"
+      },
+      "value": { "min": 28, "max": 42, "unit": "%" },
+      "value_si": { "min": 0.28, "max": 0.42, "unit": "volume fraction" },
+      "label": "Infant (2-6 months) normal",
+      "references": [
+        {
+          "source": "Mayo Clinic Laboratories",
+          "year": 2024
+        },
+        {
+          "source": "OHSU Health Laboratory Services",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 6, "max": 23, "unit": "months" },
+        "sex": "all"
+      },
+      "value": { "min": 30, "max": 40, "unit": "%" },
+      "value_si": { "min": 0.30, "max": 0.40, "unit": "volume fraction" },
+      "label": "Toddler normal",
+      "references": [
+        {
+          "source": "Mayo Clinic Health System",
+          "year": 2024
+        },
+        {
+          "source": "FPnotebook.com, Harriet Lane Handbook, 17th ed",
+          "year": 2005
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 2, "max": 6, "unit": "years" },
+        "sex": "all"
+      },
+      "value": { "min": 34, "max": 40, "unit": "%" },
+      "value_si": { "min": 0.34, "max": 0.40, "unit": "volume fraction" },
+      "label": "Child (2-6 years) normal",
+      "references": [
+        {
+          "source": "OHSU Health Laboratory Services",
+          "year": 2023
+        },
+        {
+          "source": "FPnotebook.com, Harriet Lane Handbook, 17th ed",
+          "year": 2005
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 6, "max": 12, "unit": "years" },
+        "sex": "all"
+      },
+      "value": { "min": 35, "max": 45, "unit": "%" },
+      "value_si": { "min": 0.35, "max": 0.45, "unit": "volume fraction" },
+      "label": "Child (6-12 years) normal",
+      "references": [
+        {
+          "source": "OHSU Health Laboratory Services",
+          "year": 2023
+        },
+        {
+          "source": "FPnotebook.com, Harriet Lane Handbook, 17th ed",
+          "year": 2005
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 12, "max": 18, "unit": "years" },
+        "sex": "male"
+      },
+      "value": { "min": 37, "max": 49, "unit": "%" },
+      "value_si": { "min": 0.37, "max": 0.49, "unit": "volume fraction" },
+      "label": "Adolescent male normal",
+      "references": [
+        {
+          "source": "OHSU Health Laboratory Services",
+          "year": 2023
+        },
+        {
+          "source": "FPnotebook.com, Harriet Lane Handbook, 17th ed",
+          "year": 2005
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 12, "max": 18, "unit": "years" },
+        "sex": "female"
+      },
+      "value": { "min": 36, "max": 46, "unit": "%" },
+      "value_si": { "min": 0.36, "max": 0.46, "unit": "volume fraction" },
+      "label": "Adolescent female normal",
+      "references": [
+        {
+          "source": "OHSU Health Laboratory Services",
+          "year": 2023
+        },
+        {
+          "source": "FPnotebook.com, Harriet Lane Handbook, 17th ed",
+          "year": 2005
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 18, "unit": "years" },
+        "sex": "male"
+      },
+      "value": { "min": 41, "max": 53, "unit": "%" },
+      "value_si": { "min": 0.41, "max": 0.53, "unit": "volume fraction" },
+      "label": "Adult male normal",
+      "note": "WHO criteria use a lower limit of 39% for adult males.",
+      "references": [
+        {
+          "source": "NCBI Bookshelf: Blood Groups and Red Cell Antigens",
+          "year": 2005
+        },
+        {
+          "source": "StatPearls: Normal and Abnormal Complete Blood Count",
+          "year": 2024
+        },
+        {
+          "source": "OHSU Health Laboratory Services",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 18, "unit": "years" },
+        "sex": "female"
+      },
+      "value": { "min": 36, "max": 46, "unit": "%" },
+      "value_si": { "min": 0.36, "max": 0.46, "unit": "volume fraction" },
+      "label": "Adult female normal",
+      "note": "WHO criteria use a lower limit of 36% for adult females.",
+      "references": [
+        {
+          "source": "NCBI Bookshelf: Blood Groups and Red Cell Antigens",
+          "year": 2005
+        },
+        {
+          "source": "StatPearls: Normal and Abnormal Complete Blood Count",
+          "year": 2024
+        },
+        {
+          "source": "OHSU Health Laboratory Services",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "population": {
+        "pregnancy_status": "pregnant",
+        "trimester": "first"
+      },
+      "value": { "min": 35, "max": 42, "unit": "%" },
+      "value_si": { "min": 0.35, "max": 0.42, "unit": "volume fraction" },
+      "label": "Pregnancy first trimester",
+      "note": "Physiologic hemodilution lowers hematocrit.",
+      "references": [
+        {
+          "source": "Davis's Lab & Diagnostic Tests",
+          "year": 2021
+        }
+      ]
+    },
+    {
+      "population": {
+        "pregnancy_status": "pregnant",
+        "trimester": "second"
+      },
+      "value": { "min": 28, "max": 33, "unit": "%" },
+      "value_si": { "min": 0.28, "max": 0.33, "unit": "volume fraction" },
+      "label": "Pregnancy second trimester",
+      "references": [
+        {
+          "source": "Davis's Lab & Diagnostic Tests",
+          "year": 2021
+        }
+      ]
+    },
+    {
+      "population": {
+        "pregnancy_status": "pregnant",
+        "trimester": "third"
+      },
+      "value": { "min": 28, "max": 33, "unit": "%" },
+      "value_si": { "min": 0.28, "max": 0.33, "unit": "volume fraction" },
+      "label": "Pregnancy third trimester",
+      "references": [
+        {
+          "source": "Davis's Lab & Diagnostic Tests",
+          "year": 2021
+        }
+      ]
+    }
+  ],
+  "interpretation_rules": [
+    {
+      "condition": { "op": "lt", "value": 39, "unit": "%" },
+      "population_context": "Adult male",
+      "meaning": "Anemia (WHO threshold)",
+      "references": [
+        {
+          "source": "World Health Organization (WHO) criteria for anemia",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "condition": { "op": "lt", "value": 36, "unit": "%" },
+      "population_context": "Adult non-pregnant female",
+      "meaning": "Anemia (WHO threshold)",
+      "references": [
+        {
+          "source": "World Health Organization (WHO) criteria for anemia",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "condition": { "op": "lt", "value": 33, "unit": "%" },
+      "population_context": "Children 6-59 months",
+      "meaning": "Anemia (WHO threshold)",
+      "references": [
+        {
+          "source": "World Health Organization (WHO) criteria for anemia",
+          "year": 1998
+        }
+      ]
+    },
+    {
+      "condition": { "op": "lt", "value": 34, "unit": "%" },
+      "population_context": "Children 5-11 years",
+      "meaning": "Anemia (WHO threshold)",
+      "references": [
+        {
+          "source": "World Health Organization (WHO) criteria for anemia",
+          "year": 1998
+        }
+      ]
+    },
+    {
+      "condition": { "op": "lt", "value": 36, "unit": "%" },
+      "population_context": "Children 12-14 years",
+      "meaning": "Anemia (WHO threshold)",
+      "references": [
+        {
+          "source": "World Health Organization (WHO) criteria for anemia",
+          "year": 1998
+        }
+      ]
+    },
+    {
+      "condition": { "op": "gt", "value": 52, "unit": "%" },
+      "population_context": "Adult male (persistent for >2 months)",
+      "meaning": "Suspected erythrocytosis",
+      "note": "Consider primary polycythemia vera or secondary causes",
+      "references": [
+        {
+          "source": "Tefferi A, Barbui T. Polycythemia vera: 2024 update",
+          "year": 2023
+        },
+        {
+          "source": "GPnotebook: Erythrocytosis",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "condition": { "op": "gt", "value": 48, "unit": "%" },
+      "population_context": "Adult female (persistent for >2 months)",
+      "meaning": "Suspected erythrocytosis",
+      "references": [
+        {
+          "source": "Tefferi A, Barbui T. Polycythemia vera: 2024 update",
+          "year": 2023
+        },
+        {
+          "source": "GPnotebook: Erythrocytosis",
+          "year": 2024
+        }
+      ]
+    }
+  ],
+  "critical_values": [
+    {
+      "condition": { "op": "le", "value": 21, "unit": "%" },
+      "meaning": "Critical anemia; high risk of cardiopulmonary compromise, heart failure, and death; consider immediate transfusion",
+      "note": "Some institutions use a threshold of <20% (any age) or <19.7% as an alert value.",
+      "references": [
+        {
+          "source": "Medscape: Hematocrit Critical Values",
+          "year": 2025
+        },
+        {
+          "source": "Nursing Critical Care Journal",
+          "year": 2020
+        }
+      ]
+    },
+    {
+      "condition": { "op": "gt", "value": 60, "unit": "%" },
+      "meaning": "Critical polycythemia; high risk of hyperviscosity syndrome and spontaneous thrombosis; consider phlebotomy",
+      "references": [
+        {
+          "source": "Medscape: Hematocrit Critical Values",
+          "year": 2025
+        },
+        {
+          "source": "Nursing Critical Care Journal",
+          "year": 2020
+        }
+      ]
+    },
+    {
+      "condition": { "op": "gt", "value": 65, "unit": "%" },
+      "meaning": "Neonatal critical polycythemia; risk of hyperviscosity-related complications; consider partial exchange transfusion",
+      "population_context": "Newborns",
+      "references": [
+        {
+          "source": "Mayo Clinic Laboratories Critical Values",
+          "year": 2024
+        },
+        {
+          "source": "Nelson Textbook of Pediatrics, 19th ed",
+          "year": 2011
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Reference ranges are physiologically higher in populations living at high altitudes and in heavy smokers.",
+    "Hematocrit may be falsely elevated in severe dehydration due to plasma volume contraction.",
+    "Hematocrit may be falsely decreased in overhydration (hypervolemia).",
+    "Acute blood loss may not be reflected immediately in the hematocrit due to compensatory plasma volume shifts.",
+    "The hematocrit may be unreliable in patients with microcytic (e.g., iron deficiency) or macrocytic anemia.",
+    "Pediatric ranges are highly age-dependent; ensure exact age is used for interpretation.",
+    "Values may be slightly decreased in older adults (over age 60) due to declining erythropoiesis.",
+    "Pregnancy causes physiologic hemodilution with lower hematocrit particularly in the second and third trimesters.",
+    "EDTA samples stored for prolonged periods (>24 hours) may show increased hematocrit due to RBC swelling.",
+    "Patient age, sex, nutritional status, and residential altitude all contribute to natural variations."
+  ],
+  "notes": [
+    "Hematocrit can be measured directly via centrifugation (microhematocrit method) or calculated as Hct = RBC count × MCV / 10.",
+    "The neonate has a high hematocrit at birth (up to 64%) which declines to a physiologic nadir around 2-3 months of age.",
+    "Erythrocytosis is defined as a persistently elevated hematocrit (>0.52 in males, >0.48 in females for >2 months).",
+    "When hematocrit exceeds 60% in males or 56% in females, true increase in red cell mass (rather than apparent erythrocytosis) can be assumed.",
+    "JAK2 mutation testing is indicated for evaluation of suspected polycythemia vera.",
+    "The hematocrit is part of the complete blood count and is also known as packed cell volume (PCV).",
+    "LOINC code: 4544-3; SNOMED-CT ID: 28317006."
+  ],
+  "examples": [],
+  "references": [
+    {
+      "authors": "O'Leary MF, Devaraj S",
+      "title": "Hematocrit Reference Range and Interpretation",
+      "journal": "Medscape",
+      "year": 2025
+    },
+    {
+      "authors": "Tefferi A, Barbui T",
+      "title": "Polycythemia vera: 2024 update on diagnosis, risk-stratification, and management",
+      "journal": "Am J Hematol",
+      "year": 2023,
+      "volume": "98",
+      "pages": "1465-87"
+    },
+    {
+      "authors": "World Health Organization",
+      "title": "Cutoff Values for the Diagnosis of Anemia",
+      "journal": "WHO/NIH Prevention of Micronutrient Deficiencies",
+      "year": 1998
+    },
+    {
+      "authors": "Fischbach FT, Fischbach MA",
+      "title": "A Manual of Laboratory and Diagnostic Tests, 10th ed",
+      "journal": "Wolters Kluwer",
+      "year": 2018
+    },
+    {
+      "authors": "Dean L",
+      "title": "Blood Groups and Red Cell Antigens: Complete Blood Count Reference Ranges",
+      "journal": "NCBI Bookshelf",
+      "year": 2005
+    },
+    {
+      "authors": "Elsayes K, Oldham SA",
+      "title": "Normal Values (Hematocrit reference tables)",
+      "journal": "Elsevier: Ferri's Clinical Advisor",
+      "year": 2018
+    },
+    {
+      "authors": "Behrman RE, Kliegman RM, Jenson HB",
+      "title": "Nelson Textbook of Pediatrics, 17th ed",
+      "journal": "Saunders",
+      "year": 2000,
+      "pages": "1462"
+    },
+    {
+      "authors": "McPherson RA, Pincus MR",
+      "title": "Henry's Clinical Diagnosis and Management by Laboratory Methods, 23rd ed",
+      "journal": "Elsevier",
+      "year": 2017
+    }
+  ],
+  "version": "1.0.0",
+  "updated_at": "2026-04-27"
+}
