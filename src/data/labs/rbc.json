@@ -1,0 +1,270 @@
+{
+  "id": "rbc",
+  "name": "Red Blood Cell Count",
+  "short_name": "RBC",
+  "aliases": [
+    "Erythrocyte Count",
+    "Red Count"
+  ],
+  "category": "Hematology",
+  "subcategories": [
+    "Complete Blood Count",
+    "Erythrocyte Tests"
+  ],
+  "tags": [
+    "anemia",
+    "blood",
+    "erythrocytes",
+    "oxygen-transport",
+    "polycythemia",
+    "complete blood count"
+  ],
+  "specimen": "whole blood",
+  "analyte_type": "quantitative",
+  "unit": "x10^12/L",
+  "description": "Red blood cell (RBC) count measures the number of red blood cells (erythrocytes) circulating in the peripheral blood. RBCs contain hemoglobin, the protein responsible for oxygen transport from the lungs to body tissues.",
+  "clinical_use": "Used to help diagnose and monitor red blood cell disorders such as anemia (low RBC count) and polycythemia (high RBC count). It is an integral component of the complete blood count (CBC) and aids in evaluating oxygen-carrying capacity of blood, diagnosing bleeding, hemolysis, bone marrow disorders, and chronic diseases affecting RBC production.",
+  "evidence_level": "high",
+  "ranges": [
+    {
+      "population": {
+        "age": { "min": 0, "max": 28, "unit": "days" },
+        "sex": "all"
+      },
+      "value": { "min": 3.9, "max": 6.0, "unit": "x10^12/L" },
+      "label": "Neonate normal",
+      "note": "Values at birth (up to 0-7 days) are highest, ranging from 3.9 to 6.0 x10^12/L, and decline rapidly in the first weeks of life.",
+      "references": [
+        {
+          "source": "MU Health Care Laboratory Test Catalog powered by Mayo Clinic Laboratories",
+          "year": 2025
+        },
+        {
+          "source": "The Pathology Centre: Red cell count (part of FBC profile)",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 1, "max": 12, "unit": "months" },
+        "sex": "all"
+      },
+      "value": { "min": 3.0, "max": 5.5, "unit": "x10^12/L" },
+      "label": "Infant normal",
+      "note": "RBC count reaches a physiologic nadir in early infancy (2-6 months), with lower limits as low as 2.7-3.5 x10^12/L in some references.",
+      "references": [
+        {
+          "source": "Mayo Clinic Laboratories: CBC Reference Ranges",
+          "year": 2025
+        },
+        {
+          "source": "Medscape: Erythrocyte Count (RBC) - Reference Range",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 1, "max": 12, "unit": "years" },
+        "sex": "all"
+      },
+      "value": { "min": 3.9, "max": 5.3, "unit": "x10^12/L" },
+      "label": "Child normal",
+      "references": [
+        {
+          "source": "MU Health Care Laboratory Test Catalog powered by Mayo Clinic Laboratories",
+          "year": 2025
+        },
+        {
+          "source": "The Pathology Centre: Red cell count (part of FBC profile)",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 12, "max": 17, "unit": "years" },
+        "sex": "male"
+      },
+      "value": { "min": 4.1, "max": 5.5, "unit": "x10^12/L" },
+      "label": "Adolescent male normal",
+      "references": [
+        {
+          "source": "The Pathology Centre: Red cell count (part of FBC profile)",
+          "year": 2025
+        },
+        {
+          "source": "Mayo Clinic Laboratories: CBC Reference Ranges",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 12, "max": 17, "unit": "years" },
+        "sex": "female"
+      },
+      "value": { "min": 4.1, "max": 5.3, "unit": "x10^12/L" },
+      "label": "Adolescent female normal",
+      "references": [
+        {
+          "source": "Mayo Clinic Laboratories: CBC Reference Ranges",
+          "year": 2025
+        },
+        {
+          "source": "The Pathology Centre: Red cell count (part of FBC profile)",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 18, "unit": "years" },
+        "sex": "male"
+      },
+      "value": { "min": 4.2, "max": 6.1, "unit": "x10^12/L" },
+      "label": "Adult male normal",
+      "references": [
+        {
+          "source": "Medscape: Erythrocyte Count (RBC) - Reference Range",
+          "year": 2025
+        },
+        {
+          "source": "MedlinePlus: RBC Count - Normal Values",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 18, "unit": "years" },
+        "sex": "female"
+      },
+      "value": { "min": 3.8, "max": 5.4, "unit": "x10^12/L" },
+      "label": "Adult female normal",
+      "references": [
+        {
+          "source": "Medscape: Erythrocyte Count (RBC) - Reference Range",
+          "year": 2025
+        },
+        {
+          "source": "MedlinePlus: RBC Count - Normal Values",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 60, "unit": "years" },
+        "sex": "male"
+      },
+      "value": { "min": 3.5, "max": 5.8, "unit": "x10^12/L" },
+      "label": "Geriatric male normal",
+      "note": "RBC counts often decline gradually with advancing age, particularly after the age of 60. Variations exist based on study population.",
+      "references": [
+        {
+          "source": "PMID 37137186: Reference intervals for geriatrics in Ethiopia",
+          "year": 2024
+        },
+        {
+          "source": "PMID 9542839: Reference intervals for individuals aged 80-89 years in China",
+          "year": 2022
+        }
+      ]
+    },
+    {
+      "population": {
+        "age": { "min": 60, "unit": "years" },
+        "sex": "female"
+      },
+      "value": { "min": 3.1, "max": 5.5, "unit": "x10^12/L" },
+      "label": "Geriatric female normal",
+      "note": "RBC counts often decline gradually with advancing age. Variations exist based on study population.",
+      "references": [
+        {
+          "source": "PMID 37137186: Reference intervals for geriatrics in Ethiopia",
+          "year": 2024
+        },
+        {
+          "source": "PMID 9542839: Reference intervals for individuals aged 80-89 years in China",
+          "year": 2022
+        }
+      ]
+    }
+  ],
+  "interpretation_rules": [
+        {
+      "condition": { "op": "lt", "value": 4.0, "unit": "x10^12/L" },
+      "population_context": "Adults (male)",
+      "meaning": "Low RBC count (anemia)"
+    },
+        {
+      "condition": { "op": "lt", "value": 3.8, "unit": "x10^12/L" },
+      "population_context": "Adults (female)",
+      "meaning": "Low RBC count (anemia)"
+    },
+        {
+      "condition": { "op": "lt", "value": 4.0, "unit": "x10^12/L" },
+      "population_context": "Children 1-18 years",
+      "meaning": "Low RBC count (anemia)"
+    },
+        {
+      "condition": { "op": "gt", "value": 6.1, "unit": "x10^12/L" },
+      "population_context": "Adults (male)",
+      "meaning": "High RBC count (polycythemia)"
+    },
+        {
+      "condition": { "op": "gt", "value": 5.4, "unit": "x10^12/L" },
+      "population_context": "Adults (female)",
+      "meaning": "High RBC count (polycythemia)"
+    }
+  ],
+  "critical_values": [
+    {
+      "condition": { "op": "lt", "value": 2.5, "unit": "x10^12/L" },
+      "meaning": "Severe anemia; high risk of cardiovascular compromise, tissue hypoxia, and organ failure. Consider immediate transfusion and urgent hematology consultation."
+    },
+    {
+      "condition": { "op": "gt", "value": 7.0, "unit": "x10^12/L" },
+      "meaning": "Severe polycythemia; high risk of hyperviscosity syndrome and thrombotic events. Urgent evaluation for polycythemia vera or secondary causes warranted."
+    }
+  ],
+  "warnings": [
+    "RBC counts are physiologically higher in populations living at high altitudes and in heavy smokers.",
+    "Hemodilution during the second and third trimesters of pregnancy naturally lowers RBC counts.",
+    "Severe dehydration can cause falsely elevated RBC counts due to hemoconcentration.",
+    "Pediatric ranges are highly age-dependent; ensure exact age is used for interpretation.",
+    "Reticulocyte count should be considered to assess bone marrow response to anemia.",
+    "RBC count must be interpreted alongside other CBC indices including hemoglobin, hematocrit, MCV, and MCH for accurate diagnosis."
+  ],
+  "notes": [
+    "The RBC count, along with the hemoglobin and hematocrit, are part of the red blood cell indices that provide insights into oxygen-carrying capacity and diagnose specific types of anemia.",
+    "RBC count is almost always performed as part of a complete blood count (CBC) and is often the first sign of an underlying illness.",
+    "The reference ranges presented are commonly used standards but may vary slightly between laboratories.",
+    "There is often an inverse relationship between age and RBC count in adults, with counts gradually declining after middle age."
+  ],
+  "examples": [],
+  "references": [
+    {
+      "authors": "Chong K",
+      "title": "Erythrocyte Count (RBC): Reference Range, Interpretation, Collection and Panels",
+      "journal": "Medscape",
+      "year": 2025
+    },
+    {
+      "authors": "MU Health Care Laboratory Test Catalog",
+      "title": "CBC Reference Ranges",
+      "journal": "Mayo Clinic Laboratories",
+      "year": 2025
+    },
+    {
+      "authors": "MedlinePlus",
+      "title": "Red Blood Cell (RBC) Count",
+      "journal": "National Library of Medicine",
+      "year": 2024
+    }
+  ],
+  "version": "1.0.0",
+  "updated_at": "2026-04-27"
+}
