@@ -232,7 +232,8 @@
     {
       "population": {
         "pregnancy_status": "pregnant",
-        "trimester": "first"
+        "trimester": "first",
+        "sex": "female"
       },
       "value": { "min": 35, "max": 42, "unit": "%" },
       "value_si": { "min": 0.35, "max": 0.42, "unit": "volume fraction" },
@@ -248,7 +249,8 @@
     {
       "population": {
         "pregnancy_status": "pregnant",
-        "trimester": "second"
+        "trimester": "second",
+        "sex": "female"
       },
       "value": { "min": 28, "max": 33, "unit": "%" },
       "value_si": { "min": 0.28, "max": 0.33, "unit": "volume fraction" },
@@ -263,7 +265,8 @@
     {
       "population": {
         "pregnancy_status": "pregnant",
-        "trimester": "third"
+        "trimester": "third",
+        "sex": "female"
       },
       "value": { "min": 28, "max": 33, "unit": "%" },
       "value_si": { "min": 0.28, "max": 0.33, "unit": "volume fraction" },
